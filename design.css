@@ -1,0 +1,134 @@
+html{cursor: url(sparklecursor2.png), auto;}
+h1
+{
+    font-family: "Andale Mono",monospace;
+    text-align: center;
+}
+h4
+{
+  font-family: "Cabin", sans-serif;
+  animation: rave 5s;
+  animation-iteration-count: infinite;
+}
+.link1
+{
+  font-family: "Cabin", sans-serif;
+  display: inline-block;
+  padding-right: 10%;
+  animation: rave;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transition: border-bottom 1s;
+}
+.link1:hover
+{
+  animation-duration: 0.2s;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+
+}
+.link2
+{
+  font-family: "Cabin", sans-serif;
+  display: inline-block;
+  padding-right: 10%;
+  animation: rave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transition: border-bottom 1s;
+}
+.link2:hover
+{
+  font-family: "Cabin", sans-serif;
+  display: inline-block;
+  padding-right: 10%;
+  animation: rave;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  transition: border-bottom 1s;
+}
+ul
+{
+  font-family: "Cabin", sans-serif;
+}
+body
+{
+  background-color: white;
+  background-image: url(albumart.png);
+  background-attachment: fixed;
+  background-size:1800px;
+  background-repeat: no-repeat;
+  color: #000000;
+  position: absolute;
+
+}
+.comp
+{
+  padding: 10%;
+  border: 100px
+}
+p
+{
+  background-color: white;
+  border: 1px solid #000000;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Cabin", sans-serif;
+  text-align: left;
+  line-height: 30px;
+}
+.content{
+  border: 5px groove #ce8cc7;
+  transform: rotate(0deg);
+  box-shadow: 110px 110px 4px blue;
+  border-radius: 100px;
+
+}
+.circle
+{
+  width: 200px;
+  height: 200px;
+  //background-color: black;
+  border-radius: 100px;
+  position: fixed;
+  left: 250px;
+  top: 080px;
+  border-radius: 100px;
+  box-shadow: inset 20px 50px 100px blue;
+  animation: colorcycle 15s 1;
+  z-index: -1;
+
+}
+.steel
+{
+  background-image: url(albumart.png);
+  position: absolute;
+  left: 100px;
+  top: 1500px;
+  width: 1500px;
+  height: 1500px;
+  z-index: -1;
+}
+.smile
+{
+  width:100px;
+  height:100px;
+  position:absolute;
+
+}
+@keyframes colorcycle
+{
+  from{box-shadow: inset 20px 50px 100px red;}
+    to{box-shadow: inset 20px 50px 100px blue;}
+}
+@keyframes rave
+{
+  0%{color: black;}
+  50%{color: blue;}
+  100%{color: black;}
+
+}
